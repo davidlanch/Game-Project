@@ -16,7 +16,7 @@ let cards = [
     genre: "male",
     hairColor: "brown",
     colorSkin: "white",
-    colorEyes: "brown",
+    colorEyes: "blue",
     typeOfHair: "short",
     facialHair: "beard",
     img: "florian.png",
@@ -54,7 +54,7 @@ let cards = [
     colorSkin: "white",
     colorEyes: "blue",
     typeOfHair: "short",
-    accesories: "glasses",
+    accesories: "earings",
     img: "priscilla.png",
   },
 
@@ -200,7 +200,7 @@ function createTable(table) {
   table.forEach((pic) => {
     html += `
           <div class="photos" data-card-name="${pic.name}">
-            <div class="front character" style="background-image: url(../img/${pic.img}); background-size: cover; background-position: center;" ></div>
+            <div class="front character" style="background-image: url(./img/${pic.img}); background-size: cover; background-position: center;" ></div>
           </div>
         `;
   });
@@ -240,7 +240,7 @@ let totalClicks = 0;
 function countClicks(){
     totalClicks ++;
     console.log(totalClicks);
-    if(totalClicks == 5){
+    if(totalClicks === 6){
       alert ("sorry you lost why-boy / why-girl")
     }
 }
