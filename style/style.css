@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-size: cover;
+}
+
+body {
+  background-image: url(/img/background.gif);
+
+}
+
+#board {
+  width: 1150px;
+  height: 940px;
+  padding: 70px;
+  margin: 0px auto;
+}
+
+#board .photos {
+  display: inline-block;
+  position: relative;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+#score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0px;
+  font-size: 1.5em;
+  color: white;
+}
+
+#board .photos {
+  display: inline-block;
+  position:relative;
+}
+
+#board .photos .front {
+    width: 225px;
+  height: 180px;
+  margin: 10px;
+  padding: 20px;
+  font-size: 64px;
+}
+
+#mysterius{
+    display: flex;
+    justify-content: flex-end;
+    align-content: stretch;
+    position: relative;
+    bottom: 864px;
+    right: 50px;
+    z-index: -1;
+}
+
+#mysterius img{
+    width: 300px;
+}
+
+#question-board{
+    position: absolute;
+    top: 267px;
+    width: 400px;
+    background-color: rgb(66, 29, 125, 0.5);
+    margin: 25px;
+    color: white;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: space-between;
+    height: 800px;
+}
+
+#question-board .buttons {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+#question-board .buttons button{
+  background-color: #a696c7;
+  width: 70px;
+  height: 30px;
+
+}
