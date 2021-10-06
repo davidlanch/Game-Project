@@ -200,7 +200,7 @@ function createTable(table) {
   table.forEach((pic) => {
     html += `
           <div class="photos" data-card-name="${pic.name}">
-            <div class="front character" style="background-image: url(/img/${pic.img}); background-size: cover; background-position: center;" ></div>
+            <div class="front character" style="background-image: url(../img/${pic.img}); background-size: cover; background-position: center;" ></div>
           </div>
         `;
   });
@@ -245,6 +245,7 @@ function countClicks(){
     }
 }
 
+ // Create a system of points 
 
 let totalScore = 0; 
 
@@ -256,7 +257,7 @@ function handleClick(e) {
   //event listener sur les photo
   //cards points length
 
-  // Create a system of points
+ 
 
   
 
