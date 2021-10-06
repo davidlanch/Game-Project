@@ -228,43 +228,34 @@ const allButtons = document.querySelectorAll(".buttons > button");
 //for each button we are going to add and event listener when we click and we are going to call a function (handleClick)
 allButtons.forEach((btn) => {
   btn.addEventListener("click", handleClick);
-  btn.addEventListener("click", countClicks)
+  btn.addEventListener("click", countClicks);
 });
-
-
 
 // count the clicks
 
 let totalClicks = 0;
 
-function countClicks(){
-    totalClicks ++;
-    console.log(totalClicks);
-    if(totalClicks === 6){
-      alert ("sorry you lost why-boy / why-girl")
-    }
+function countClicks() {
+  totalClicks++;
+  console.log(totalClicks);
+  if (totalClicks === 10) {
+    alert("sorry you lost why-boy / why-girl");
+  }
 }
 
- // Create a system of points 
+// Create a system of points
 
-let totalScore = 0; 
+let totalScore = 0;
 
 //this function is going to search the information of the attributes in the html document thanks to the click event and after is going to introduce the values in the condition.
 function handleClick(e) {
   const searchType = e.target.getAttribute("data-search-type");
   const searchValue = e.target.getAttribute("data-search-value");
 
-  //event listener sur les photo
-  //cards points length
-
- 
-
-  
-
   // Condition that are going to search if the genre that the user choose are the good
   if (searchType === "genre") {
     if (searchValue === guess.genre) {
-      totalScore ++
+      totalScore++;
       score.textContent = totalScore;
       console.log(totalScore);
       cards = filterGenre(cards);
@@ -274,7 +265,7 @@ function handleClick(e) {
     }
   } else if (searchType === "hairColor") {
     if (searchValue === guess.hairColor) {
-      totalScore ++
+      totalScore++;
       score.textContent = totalScore;
       cards = filterHairColor(cards);
       createTable(cards);
@@ -283,7 +274,7 @@ function handleClick(e) {
     }
   } else if (searchType === "colorSkin") {
     if (searchValue === guess.colorSkin) {
-      totalScore ++
+      totalScore++;
       score.textContent = totalScore;
       cards = filterSkinColor(cards);
       createTable(cards);
@@ -292,7 +283,7 @@ function handleClick(e) {
     }
   } else if (searchType === "colorEyes") {
     if (searchValue === guess.colorEyes) {
-      totalScore ++
+      totalScore++;
       score.textContent = totalScore;
       cards = filterEyesColor(cards);
       createTable(cards);
@@ -301,7 +292,7 @@ function handleClick(e) {
     }
   } else if (searchType === "typeOfHair") {
     if (searchValue === guess.typeOfHair) {
-      totalScore ++
+      totalScore++;
       score.textContent = totalScore;
       cards = filterHairType(cards);
       createTable(cards);
@@ -310,7 +301,7 @@ function handleClick(e) {
     }
   } else if (searchType === "facialHair") {
     if (searchValue === guess.facialHair) {
-      totalScore ++
+      totalScore++;
       score.textContent = totalScore;
       cards = filterFacialHair(cards);
       createTable(cards);
@@ -319,7 +310,7 @@ function handleClick(e) {
     }
   } else if (searchType === "accesories") {
     if (searchValue === guess.accesories) {
-      totalScore ++
+      totalScore++;
       score.textContent = totalScore;
       cards = filterAccesories(cards);
       createTable(cards);
