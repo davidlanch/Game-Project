@@ -81,7 +81,7 @@ body {
   flex-direction: column;
   padding: 20px;
   justify-content: space-between;
-  height: 680px;
+  height: 750px;
 }
 
 #question-board .buttons {

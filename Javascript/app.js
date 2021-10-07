@@ -201,7 +201,7 @@ function createTable(table) {
   // the alert is going to show if the user win if the table.length is equal to 1
   if (table.length <= 1) {
     alert("you won bravo!");
-    restartGame();
+    setTimeout(function(){ restartGame() }, 5000);
   }
 }
 
@@ -251,6 +251,7 @@ function countClicks() {
     restartGame();
   }
 }
+
 
 let totalScore = 0;
 
