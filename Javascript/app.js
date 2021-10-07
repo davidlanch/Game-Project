@@ -1,4 +1,4 @@
-let cards = [
+let originalCards = [
   {
     id: "1",
     name: "marie",
@@ -179,6 +179,8 @@ let cards = [
 
 ];
 
+
+
 const score = document.querySelector("#score span");
 console.log(score);
 
@@ -199,9 +201,24 @@ function createTable(table) {
   // the alert is going to show if the user win if the table.length is equal to 1
   if (table.length <= 1) {
     alert("you won bravo!");
+    restartGame();
   }
 }
-createTable(cards);
+
+createTable(originalCards)
+
+let cards = [...originalCards]
+
+//This function is going to restart the game 
+
+function restartGame(){
+  totalClicks = 0;
+  totalClicksDom.textContent = totalClicks;
+  totalScore = 0;
+  score.textContent = totalScore;
+  cards = [...originalCards]
+  createTable(cards);
+}
 
 // This function is going to choose a randome character that we are going to need to find
 function selectRandom(character) {
@@ -210,6 +227,7 @@ function selectRandom(character) {
 }
 
 let guess = selectRandom(cards);
+console.log(guess);
 
 //Select all the buttons of the document
 const allButtons = document.querySelectorAll(".buttons > button");
@@ -222,19 +240,17 @@ allButtons.forEach((btn) => {
 
 // count the clicks
 
+const totalClicksDom = document.querySelector("#count-clicks span");
 let totalClicks = 0;
 
 function countClicks() {
   totalClicks++;
-  console.log(totalClicks);
-  if (totalClicks === 10) {
+  totalClicksDom.textContent = totalClicks ;
+  if (totalClicks >= 11) {
     alert("sorry you lost why-boy / why-girl");
+    restartGame();
   }
 }
-
-
-
-
 
 let totalScore = 0;
 

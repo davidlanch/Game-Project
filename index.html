@@ -9,14 +9,33 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="title">
+    <input type="checkbox" id="btn-modal">
+	<label for="btn-modal" class="lbl-modal">Rules</label>
+	<div class="modal">
+		<div class="contenedor">
+			<header>¡Welcome to guess who!</header>
+			<label for="btn-modal">X</label>
+			<div class="contenido">
+				<ol>
+          <li>The computer is going to select a character that you need to guess.</li>
+          <li>You have a board with all the questions that you can ask</li>
+          <li>Every good answer is going to give you 10 points</li>
+          <li>Be careful because you only have 10 questions</li>
+        </ol>
+			</div>
+		</div>
+	</div>
+    <div id="title" >
       <img src="./img/cooltext394588081889564.png" alt="title" />
     </div>
     <div id="score">
       <h2>Score</h2>
       <p>Guessed: <span>0</span></p>
     </div>
-    <div class="#test">
+    <div id="count-clicks">
+      <p>Attemps: <span>0</span></p>
+    </div>
+    <div>
       <div id="board"></div>
     <div id="question-board">
       <div class="question">
@@ -61,15 +80,15 @@
       <div class="question" >
         <h2>Your character use:</h2>
         <div class="buttons">
-          <button data-search-type="accesories" class="earings">Earings</button>
-          <button data-search-type="accesories" class="glasses">Glasses</button>
-          <button data-search-type="accesories" class="necklace">Necklace</button>
+          <button data-search-type="accesories" data-search-value="earings">Earings</button>
+          <button data-search-type="accesories" data-search-value="glasses">Glasses</button>
+          <button data-search-type="accesories" data-search-value="necklace">Necklace</button>
         </div>
       </div>
       <div class="question" >
         <h2>Your character have</h2>
         <div class="buttons">
-          <button data-search-type="facialHair" class="beard">Beard</button>
+          <button data-search-type="facialHair" data-search-value="beard">Beard</button>
         </div>
       </div>
     </div>
