@@ -66,7 +66,7 @@ let cards = [
     colorSkin: "white",
     colorEyes: "brown",
     typeOfHair: "short",
-    accesories: "earings",
+    accesories: "necklace",
     img: "sandra.png",
   },
 
@@ -184,7 +184,7 @@ let cards = [
     hairColor: "white",
     colorSkin: "white",
     colorEyes: "blue",
-    typeOfHair: "short",
+    typeOfHair: "long",
     accesories: "glasses",
     img: "amelie.png",
   },
@@ -255,7 +255,7 @@ function handleClick(e) {
   // Condition that are going to search if the genre that the user choose are the good
   if (searchType === "genre") {
     if (searchValue === guess.genre) {
-      totalScore++;
+      totalScore+= 10;
       score.textContent = totalScore;
       console.log(totalScore);
       cards = filterGenre(cards);
@@ -265,7 +265,7 @@ function handleClick(e) {
     }
   } else if (searchType === "hairColor") {
     if (searchValue === guess.hairColor) {
-      totalScore++;
+      totalScore+= 10;
       score.textContent = totalScore;
       cards = filterHairColor(cards);
       createTable(cards);
@@ -274,7 +274,7 @@ function handleClick(e) {
     }
   } else if (searchType === "colorSkin") {
     if (searchValue === guess.colorSkin) {
-      totalScore++;
+      totalScore+= 10;
       score.textContent = totalScore;
       cards = filterSkinColor(cards);
       createTable(cards);
@@ -283,7 +283,7 @@ function handleClick(e) {
     }
   } else if (searchType === "colorEyes") {
     if (searchValue === guess.colorEyes) {
-      totalScore++;
+      totalScore+= 10;
       score.textContent = totalScore;
       cards = filterEyesColor(cards);
       createTable(cards);
@@ -292,7 +292,7 @@ function handleClick(e) {
     }
   } else if (searchType === "typeOfHair") {
     if (searchValue === guess.typeOfHair) {
-      totalScore++;
+      totalScore+= 10;
       score.textContent = totalScore;
       cards = filterHairType(cards);
       createTable(cards);
@@ -301,7 +301,7 @@ function handleClick(e) {
     }
   } else if (searchType === "facialHair") {
     if (searchValue === guess.facialHair) {
-      totalScore++;
+      totalScore+= 10;
       score.textContent = totalScore;
       cards = filterFacialHair(cards);
       createTable(cards);
@@ -310,7 +310,7 @@ function handleClick(e) {
     }
   } else if (searchType === "accesories") {
     if (searchValue === guess.accesories) {
-      totalScore++;
+      totalScore+= 10;
       score.textContent = totalScore;
       cards = filterAccesories(cards);
       createTable(cards);
