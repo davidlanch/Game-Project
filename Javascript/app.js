@@ -200,7 +200,7 @@ function createTable(table) {
   table.forEach((pic) => {
     html += `
           <div class="photos" data-card-name="${pic.name}">
-            <div class="front character" style="background-image: url(./img/${pic.img}); background-size: cover; background-position: center;" ></div>
+            <div class="front character" style="background-image: url(./img/${pic.img}); background-size: cover; background-position: center;  width: 150px" ></div>
           </div>
         `;
   });
