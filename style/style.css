@@ -13,13 +13,8 @@ body {
 }
 
 #board {
-  width: 1150px;
-  height: 940px;
-  padding: 70px;
-  margin: 0px auto;
-  position: relative;
-  left: 280px;
-  top: 10px;
+  padding: 20px;
+  margin-left: 50px;
 }
 
 #board .photos {
@@ -33,14 +28,7 @@ body {
   margin: 30px;
 }
 
-#score {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 0px;
-  font-size: 1.5em;
-  color: white;
-}
+
 
 #board .photos {
   display: inline-block;
@@ -70,18 +58,25 @@ body {
 }
 
 #question-board {
-  position: absolute;
-  top: 310px;
+  position: relative;
+  /* top: 310px; */
   width: 350px;
   background-color: rgb(66, 29, 125, 0.5);
-  margin: 25px;
+  /* margin: 25px; */
   color: white;
   border-radius: 10%;
   display: flex;
   flex-direction: column;
   padding: 20px;
-  justify-content: space-between;
-  height: 750px;
+  /* justify-content: space-between; */
+  /* height: 750px;*/
+  margin-right: 50px;
+}
+
+#general-board{
+  display: flex;
+    position: absolute;
+    top: 171px;
 }
 
 #question-board .buttons {
@@ -95,15 +90,26 @@ body {
   width: 70px;
   height: 30px;
   border-radius: 25%;
+  color:#422f48;
+  font-size: 18px;
 }
 
-#count-clicks {
+
+
+
+
+#score-clicks-box{
+
   display: flex;
   position: relative;
-  color: white;
-  justify-content: flex-end;
-  right: 647px;
-  font-size: 1.5em;
+  bottom: 178px;
+  color: #FFE;
+  align-items: center;
+  right: 190px;
+  font-size: 30px;
+ 
+  justify-content: space-evenly;
+ 
 }
 
 /* modal */
@@ -112,10 +118,11 @@ body {
   position: fixed;
   top: 85px;
   left: 400px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   transition: all 500ms ease;
   opacity: 0;
   visibility: hidden;
+  z-index: 12;
 }
 #btn-modal:checked ~ .modal {
   opacity: 1;
@@ -173,11 +180,13 @@ padding-top: 20px;
   display: none;
 }
 .lbl-modal {
-  background: #a696c7;
+  background: #44208f;
   padding: 10px 15px;
   border-radius: 4px;
   cursor: pointer;
   position: relative;
-  left: 170px;
-  top: 250px;
+  left: 200px;
+  top: 135px;
+  color:white;
 }
+
