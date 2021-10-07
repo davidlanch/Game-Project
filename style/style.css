@@ -17,6 +17,7 @@ body {
   margin: 0px auto;
   position: relative;
   left: 280px;
+  top: 100px;
 }
 
 #board .photos {
@@ -67,18 +68,18 @@ body {
 }
 
 #question-board{
-    position: absolute;
-    top: 267px;
-    width: 400px;
-    background-color: rgb(66, 29, 125, 0.5);
-    margin: 25px;
-    color: white;
-    border-radius: 10%;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    justify-content: space-between;
-    height: 800px;
+  position: absolute;
+  top: 310px;
+  width: 350px;
+  background-color: rgb(66, 29, 125, 0.5);
+  margin: 25px;
+  color: white;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-between;
+  height: 680px;
 }
 
 #question-board .buttons {
@@ -94,3 +95,4 @@ body {
   height: 30px;
 
 }
+

@@ -177,17 +177,6 @@ let cards = [
     img: "hugo.png",
   },
 
-  {
-    id: "16",
-    name: "amelie",
-    genre: "women",
-    hairColor: "white",
-    colorSkin: "white",
-    colorEyes: "blue",
-    typeOfHair: "long",
-    accesories: "glasses",
-    img: "amelie.png",
-  },
 ];
 
 const score = document.querySelector("#score span");
@@ -243,7 +232,9 @@ function countClicks() {
   }
 }
 
-// Create a system of points
+
+
+
 
 let totalScore = 0;
 
@@ -255,10 +246,12 @@ function handleClick(e) {
   // Condition that are going to search if the genre that the user choose are the good
   if (searchType === "genre") {
     if (searchValue === guess.genre) {
+      // Create a system of points
       totalScore+= 10;
       score.textContent = totalScore;
       console.log(totalScore);
       cards = filterGenre(cards);
+      // create a new table with the cards that have this characteristics 
       createTable(cards);
     } else {
       alert("is the other genre daaaa!");
