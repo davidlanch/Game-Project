@@ -177,6 +177,18 @@ let originalCards = [
     img: "hugo.png",
   },
 
+  {
+    id: "16",
+    name: "amelie",
+    genre: "women",
+    hairColor: "black",
+    colorSkin: "white",
+    colorEyes: "brown",
+    typeOfHair: "long",
+    accesories: "glasses",
+    img: "amelie.png",
+  },
+
 ];
 
 
