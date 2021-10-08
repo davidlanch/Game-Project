@@ -15,6 +15,8 @@ body {
 #board {
   padding: 20px;
   margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 206px);
 }
 
 #board .photos {
